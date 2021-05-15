@@ -15,6 +15,6 @@ public class DeepSizeUsingGraphUnitTest {
         Department aDepartment = new Department(departmentName);
 
         long deepSize = GraphLayout.parseInstance(aDepartment).totalSize();
-        assertThat(deepSize, is(80));
+        assertThat(deepSize, is(80L));
     }
 }
